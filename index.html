@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>screen-to-body calculator</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,400' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <form action="" class="form-horizontal">
+
+            <div class='row'>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="device_height">Device properties:</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input id="device_height" placeholder="height" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">mm.</div>
+                        </div>
+                    </div>
+                    <p class="help-block pull-left">x</p>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input id="device_width" placeholder="width" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">mm.</div>
+                        </div>
+                    </div>
+                    <p class="help-block">123.8 (height mm.) x 58.6 (width mm.) - Iphone 5</p>
+                </div>
+
+            </div>
+
+            <div class='row'>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="device_diagonal_inch">Device diagonal:</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input placeholder="diag. inch." id="device_diagonal_inch" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">inch.</div>
+                        </div>
+                    </div>
+                    <p class="help-block pull-left">=</p>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input placeholder="diag. mm." id="device_diagonal_mm" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">mm.</div>
+                        </div>
+                    </div>
+                    <p class="help-block">4 (diag. inch.) x 101.6 (diag. mm.) - Iphone 5 (1 inch. = 25.4 mm.)</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="screen_height">Screen resolution:</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input id="screen_height" placeholder="height" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">px.</div>
+                        </div>
+                    </div>
+                    <p class="help-block pull-left">x</p>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input id="screen_width" placeholder="width" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">px.</div>
+                        </div>
+                    </div>
+                    <p class="help-block">1136 (height px.) x 640 (width px.) - Iphone 5</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="result">RESULT (screen-to-body ratio):</label>
+                    <p class="help-block pull-left">&nbsp;</p>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <input id="result" placeholder="screen-to-body ratio" class="form-control" type="text" value="" />
+                            <div class="input-group-addon">%</div>
+                        </div>
+                    </div>
+                    <p class="help-block">60.80% (screen-to-body ratio) - Iphone 5</p>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

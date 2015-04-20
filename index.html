@@ -15,7 +15,7 @@
 
     <div class="container" style="margin-top: 100px">
         <div class="panel panel-default">
-            <div class="panel-heading">screen-to-body ratio online calculator</div>
+            <div class="panel-heading">screen-to-body ratio online calculator <span class="pull-right">v.1.0.0</span></div>
             <div class="panel-body">
                 <form action="" class="form-horizontal">
 
@@ -116,7 +116,7 @@
             var dev_width = parseFloat($('#device_width').val());
             var dev_diagonal = parseFloat($('#device_diagonal_inch').val())*25.4;
 
-            $('#device_diagonal_mm').val(dev_diagonal);
+            $('#device_diagonal_mm').val(dev_diagonal.toFixed(2));
 
             var screen_height = parseFloat($('#screen_height').val());
             var screen_width = parseFloat($('#screen_width').val());
@@ -126,7 +126,6 @@
             var screen_area = dev_diagonal*dev_diagonal*ratio / (1+ratio*ratio);
 
             var result = screen_area/dev_area*100;
-
             $('#result').val(result.toFixed(2));
 
         }

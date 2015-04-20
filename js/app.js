@@ -5,7 +5,8 @@
         this.device = gem;
 
         this.get_diag_mm = function(){
-            this.device.diagonal_mm = (this.device.diagonal_inch * 25.4).toFixed(2);
+            var diagonal_mm = this.device.diagonal_inch * 25.4;
+            this.device.diagonal_mm = diagonal_mm ? diagonal_mm.toFixed(2) : "";
         }
     });
 
